@@ -3,7 +3,7 @@ from flask import Flask, jsonify, make_response
 app = Flask(__name__)
 
 
-@app.route('/api/v1.0/test', methods=['GET'])
+@app.route('/', methods=['GET'])
 def test_response():
     """Return a sample JSON response."""
     sample_response = {
